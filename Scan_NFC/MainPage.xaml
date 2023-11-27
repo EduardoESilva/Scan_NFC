@@ -7,10 +7,13 @@
              x:Class="Scan_NFC.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <!-- Header com cor de fundo personalizada e um rótulo centralizado -->
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0" Margin="0, 0, 0, 16">
             <Label Text="NFC TAGS" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Entry x:Name="meuEntry" Text="Tag NFC não lida ainda." HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+        <!-- Entrada para exibir o resultado da tag NFC -->
+        <Entry x:Name="meuEntry" Placeholder="Tag NFC:" VerticalOptions="CenterAndExpand" Margin="16"/>
     </StackLayout>
 
 </ContentPage>

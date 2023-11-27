@@ -6,7 +6,6 @@ namespace Scan_NFC
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
@@ -26,7 +25,7 @@ namespace Scan_NFC
             // Atualiza o Entry com o valor da tag NFC
             Device.BeginInvokeOnMainThread(() =>
             {
-                meuEntry.Text = $"Tag NFC Lida - ID: {message}";
+                meuEntry.Text = $"{message}";
                 // Exibe um alerta opcional
                 DisplayAlert("Tag NFC Lida", $"ID: {message}", "OK");
             });
